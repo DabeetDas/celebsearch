@@ -66,24 +66,28 @@ This operator is designed to predict edges using variations in intensity of vari
 
 - **Sobel-X Matrix:**  
   This matrix performs weighted subtractions to detect changes in the horizontal direction. The middle row, containing `2` and `-2`, emphasizes intensity changes in the direct neighborhood of the concerned cell. This design enhances the detection of horizontal edges while reducing the influence of diagonal or vertical intensity variations.
-  ![Sobel-X][https://github.com/DabeetDas/celebsearch/blob/master/Assets/sobelx.png]
+  
+  ![alt text][https://github.com/DabeetDas/celebsearch/blob/master/Assets/sobelx.png]
 
 - **Sobel-Y Matrix:**  
   This matrix works similarly to Sobel-X but detects changes in the vertical direction.
-  ![Sobel-Y][https://github.com/DabeetDas/celebsearch/blob/master/Assets/sobely.png]
+  
+  ![alt text][https://github.com/DabeetDas/celebsearch/blob/master/Assets/sobely.png]
 
 #### Combining Both
 
 1. **Square-Root Approach:**  
    After performing convolutions and obtaining the X and Y matrices, the overall change in intensity is computed using a formula analogous to the Pythagorean theorem:  
-   ![Pythagorean analogue][https://github.com/DabeetDas/celebsearch/blob/master/Assets/pyth.png]  
+   
+   ![alt text][https://github.com/DabeetDas/celebsearch/blob/master/Assets/pyth.png]  
    - **F1 Score:** 0.85  
    - **Precision:** 0.78  
    - **Recall:** 0.94  
 
 2. **Modulus Approach:**  
    A simpler formula is used for \( G \):  
-   ![Absolute Value][https://github.com/DabeetDas/celebsearch/blob/master/Assets/abs.png] 
+   
+   ![alt text][https://github.com/DabeetDas/celebsearch/blob/master/Assets/abs.png] 
    - **F1 Score:** 0.86  
    - **Precision:** 0.81  
    - **Recall:** 0.91  
