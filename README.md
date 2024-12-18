@@ -16,9 +16,10 @@ Various different methods have been employed to detect edges in the given image.
 The structure and contents of each file in this repository is as follows:
 
 1. **week1.ipynb** – This contains rough work/experiments used in the development phase.
-2. **week1_final.ipynb** – This file contains the FINAL code for the project with all the results and proper plots for each operation.
+2. **week1_final.ipynb** – This file also contains the rough code for the project with all the results and proper plots for each operation.
 3. **Copy of file(2)** has also been included in this repo, it also contains rough work and experiments.
-4. **README** – Overview of the code.
+4. **week1_final_withevualiton.ipynb** - THIS FILE HAS THE FINAL CODE WITH EVERYTHING.
+5. **README** – Overview of the code.
 
 ---
 
