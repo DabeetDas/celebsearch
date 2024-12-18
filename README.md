@@ -66,24 +66,24 @@ This operator is designed to predict edges using variations in intensity of vari
 
 - **Sobel-X Matrix:**  
   This matrix performs weighted subtractions to detect changes in the horizontal direction. The middle row, containing `2` and `-2`, emphasizes intensity changes in the direct neighborhood of the concerned cell. This design enhances the detection of horizontal edges while reducing the influence of diagonal or vertical intensity variations.
-  ![Sobel-X][https://media.discordapp.net/attachments/674954939696676884/1318903981061181490/image.png?ex=6764048d&is=6762b30d&hm=1023b8d0a19af50fbbb9ea1f453158c3544d462d1b3f709e396cbaefb61ab4c8&=&format=webp&quality=lossless]
+  ![Sobel-X][https://github.com/DabeetDas/celebsearch/blob/master/Assets/sobelx.png]
 
 - **Sobel-Y Matrix:**  
   This matrix works similarly to Sobel-X but detects changes in the vertical direction.
-  ![Sobel-Y][https://cdn.discordapp.com/attachments/674954939696676884/1318904205628538921/image.png?ex=676404c2&is=6762b342&hm=a457e9465e2d626b59120685beaed2de43aa876132b64221234c38d528a0574e&]
+  ![Sobel-Y][https://github.com/DabeetDas/celebsearch/blob/master/Assets/sobely.png]
 
 #### Combining Both
 
 1. **Square-Root Approach:**  
    After performing convolutions and obtaining the X and Y matrices, the overall change in intensity is computed using a formula analogous to the Pythagorean theorem:  
-   ![Pythagorean analogue][https://cdn.discordapp.com/attachments/674954939696676884/1318904333273661540/image.png?ex=676404e1&is=6762b361&hm=f65b73e06984f25362706b16773ce95ca139d438a14ed197ff78cdbe55fdcab3&]  
+   ![Pythagorean analogue][https://github.com/DabeetDas/celebsearch/blob/master/Assets/pyth.png]  
    - **F1 Score:** 0.85  
    - **Precision:** 0.78  
    - **Recall:** 0.94  
 
 2. **Modulus Approach:**  
    A simpler formula is used for \( G \):  
-   ![Absolute Value][https://cdn.discordapp.com/attachments/674954939696676884/1318904591915683893/image.png?ex=6764051e&is=6762b39e&hm=10f0d816f3a85731afa8e8bcccefe7ef00c9eb4288d5a780d5d27fbec9d4e69e&] 
+   ![Absolute Value][https://github.com/DabeetDas/celebsearch/blob/master/Assets/abs.png] 
    - **F1 Score:** 0.86  
    - **Precision:** 0.81  
    - **Recall:** 0.91  
